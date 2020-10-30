@@ -175,6 +175,11 @@ p {
   margin-right: auto;
 }
 
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
 /*
 =============== 
 Navbar
@@ -385,14 +390,6 @@ Hero
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-photo {
-    max-width: 25rem;
-    max-height: 35rem;
-    object-fit: cover;
-    border-radius: var(--radius);
-    position: relative;
-  }
-
   .hero-img::before {
     content: '';
     position: absolute;
@@ -405,6 +402,13 @@ Hero
   }
 }
 
+.hero-photo {
+    max-width: 25rem;
+    max-height: 35rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    position: relative;
+  }
 /*
 =============== 
 About
@@ -412,6 +416,23 @@ About
 */
 /* section title added to globals */
 
+.about-title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.about-title .underline {
+  margin-left: 0;
+}
+
+.about-center {
+  display: grid;
+  gap: 3rem 2rem;
+}
+
+.about-img {
+  justify-self: center;
+}
 /*
 =============== 
 Services
